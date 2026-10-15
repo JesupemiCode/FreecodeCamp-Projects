@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Community Arts Hub</title>
+</head>
+<body>
+<header>
+   <h1>Welcome to the Community Arts Hub</h1>
+   <p>Welcome to the Community Arts Hub, a place where people can explore their creativity, learn new skills, and take part in exciting arts activities.</p>
+</header>
+
+<main>
+<figure>
+    <img src="Images.jpg" alt="Community Arts Hub">
+    <figcaption>Community Arts Hub</figcaption>
+</figure>
+ 
+   <h2>Upcoming Events Schedule Table</h2>
+ <ol>
+    <li><a href="#pottery-workshop">Pottery</a></li>
+    <li><a href="#digital-photography">Digital Photography</a></li>
+    <li><a href="#coding-workshop">Coding</a></li>
+</ol>
+
+<table>
+    <tr>
+        <th>Workshop</th>
+        <th>Description</th>
+        <th>Time</th>
+        <th>Instructor</th>
+    </tr>
+
+    <tr id="pottery-workshop">
+        <td>Pottery Workshop</td>
+        <td>Learn the art of shaping clay into beautiful pieces. All skill levels are welcome!</td>
+        <td><time datetime="07:00">7:00</time></td>
+        <td>Ben</td>
+    </tr>
+
+    <tr id="digital-photography">
+        <td>Digital Photography Class</td>
+        <td>Learn techniques for capturing stunning images and editing them like a pro.</td>
+        <td><time datetime="09:00">9:00</time></td>
+        <td>Alice</td>
+    </tr>
+
+    <tr id="coding-workshop">
+        <td>Coding Workshop</td>
+        <td>Learn the fundamentals of programming. All skill levels are welcome!</td>
+        <td><time datetime="11:00">11:00</time></td>
+        <td>Charlie</td>
+    </tr>
+</table>
+  <section>
+<h3>A Multimedia Showcase</h3>
+    <iframe
+        src="https://www.youtube.com/embed/gnQB3NooRck"
+        width="560"
+        height="315"
+        title="Tour of Community Arts Hub"
+        allowfullscreen>
+    </iframe>
+<audio src="" loop controls></audio>
+  </section>
+  <fieldset>
+    <legend>Personal Information</legend>
+<label for="full-name">Name (required):</label>
+<input type="text" id="full-name" name="name" placeholder="e.g., John Doe" required size="20">
+ <label for="email">Email address (required):</label>
+ <input placeholder="example@email.com"required id="email" type="email" name="email" size="20"/>
+  </fieldset>
+ <fieldset>
+   <legend>Preferred Workshop</legend>
+<label for="workshop">which of the workshop do u prefer?</label>
+   
+<select name="workshop" id="workshop">
+<option value="#pottery-workshop">Pottery Workshop</option>
+<option value="#digital-photography">Digital Photography Class</option>
+<option value="coding-workshop">Coding Workshop</option>
+   </select>
+    </fieldset>
+    <fieldset>
+      <legend>Session Time</legend>
+      <input type="checkbox" id="Morning" name="choice" value="Morning"/>
+      <label for="Morning">Morning</label>
+      
+      <input type="checkbox" id="Afternoon" name="choice" value="Afternoon"/>
+      <label for="Afternoon">Afternoon</label> 
+    </fieldset>
+<button type="submit">Submit</button> 
+</main>
+</body>
+</html>
+
