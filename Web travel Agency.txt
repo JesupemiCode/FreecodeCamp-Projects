@@ -1,0 +1,37 @@
+Web travel Agency
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Travel Agency Page</title>
+    <meta name="description" content="Explore amazing travel destinations and opportunities with our travel agency." >
+    </head>
+    <body>
+    <h1>Travel Destinations</h1>
+    <p>Discover exciting travel opportunities and unforgettable destinations</p>
+    <h2>Packages</h2>
+    <p>Choose from a variety of travel packages designed for different types of travellers.</p>
+    <ul>
+      <li><a href="https://www.freecodecamp.org/learn">Group Travels</a></li>
+      <li><a href="https://www.freecodecamp.org/learn">Private Tours</a></li>
+      </ul>
+    <h2>Top Itineraries</h2>
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg" alt="The colosseo"> </a>
+      <figcaption>Explore the Colosseum in Rome.</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank"> 
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/alps.jpg" alt="The alps"> </a>
+       <figcaption>Experience the beautiful Alps.</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/sea.jpg" alt="The sea"> </a>
+       <figcaption>Relax by the beautiful sea.</figcaption>
+    </body>
+    </html>
