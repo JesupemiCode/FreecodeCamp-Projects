@@ -1,0 +1,111 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 30px 15px;
+}
+
+h1 {
+  color: #25324a;
+}
+
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.color-box {
+  width: 200px;
+  height: 150px;
+  min-width: 0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+  /* Shadowy background */
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.18),
+    0 0 15px rgba(100, 100, 255, 0.12);
+
+  /* Smooth animation */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+}
+
+/* Hover effect for every box */
+.color-box:hover {
+  transform: translateY(-10px) scale(1.04);
+  filter: brightness(1.1);
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.25),
+    0 0 25px rgba(108, 92, 231, 0.4);
+}
+
+/* Individual colours */
+.color1 {
+  background-color: #6c5ce7;
+  box-shadow: 0 8px 20px rgba(108, 92, 231, 0.35);
+}
+
+.color2 {
+  background-color: rgb(46, 134, 193);
+  box-shadow: 0 8px 20px rgba(46, 134, 193, 0.35);
+}
+
+.color3 {
+  background-color: tomato;
+  box-shadow: 0 8px 20px rgba(255, 99, 71, 0.35);
+}
+
+.color4 {
+  background-color: hsl(145, 63%, 42%);
+  box-shadow: 0 8px 20px hsla(145, 63%, 42%, 0.35);
+}
+
+.color5 {
+  background-color: #e84393;
+  box-shadow: 0 8px 20px rgba(232, 67, 147, 0.35);
+}
+
+/* Individual glow when hovering */
+.color1:hover {
+  box-shadow: 0 15px 35px rgba(108, 92, 231, 0.65);
+}
+
+.color2:hover {
+  box-shadow: 0 15px 35px rgba(46, 134, 193, 0.65);
+}
+
+.color3:hover {
+  box-shadow: 0 15px 35px rgba(255, 99, 71, 0.65);
+}
+
+.color4:hover {
+  box-shadow: 0 15px 35px hsla(145, 63%, 42%, 0.65);
+}
+
+.color5:hover {
+  box-shadow: 0 15px 35px rgba(232, 67, 147, 0.65);
+}
+
+/* Accessibility: reduce animation if requested */
+@media (prefers-reduced-motion: reduce) {
+  .color-box {
+    transition: none;
+  }
+
+  .color-box:hover {
+    transform: none;
+  }
+}
